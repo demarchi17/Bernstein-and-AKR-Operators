@@ -79,7 +79,6 @@ BB=fliplr(BBxyT); BAKR=fliplr(BAKRxyT);
 errBer2dT(n)=norm(BB-FTT)/norm(FTT);
 errAKR2dT(n)=norm(BAKR-FTT)/norm(FTT);
 
-
 end
 
 subplot(3,1,1)
@@ -104,10 +103,6 @@ title('AKR-approximant deg 15')
 figure
 plot(btx,bty,'o',atx,aty,'*')
 legend('B-points','AKR points for j=2 on the triangle')
-
-figure
-plot(ex,ey,'r.');
-
 
 figure
 semilogy(1:length(errBer2dT),errBer2dT,'b-.',1:length(errAKR2dT),errAKR2dT,'r')
