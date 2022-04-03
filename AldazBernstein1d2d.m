@@ -58,8 +58,7 @@ clear n
 %
 %  bivariate example
 %
-f2d=@(x,y) exp(x.^2.*y.^2);
-%f2d=@(x,y) exp(-x-y);
+f2d=@(x,y) exp(x.^2.*y.^2)-1;
 
 for n=j:N
 % figure(2)
